@@ -1,0 +1,27 @@
+/* учитывает все свойства связанных блоков */
+* {
+    box-sizing: border-box; 
+  }
+/* экран body масштабируется по центру */
+.body {
+    position:relative;
+    max-width:1680px;
+    margin: 0 auto;
+      } 
+/* настрока шрифтов */
+.merrivweather-bold {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+      }
+
+.inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+      }      
+
+.inter-regular-bold {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+      }            
+      
+      
