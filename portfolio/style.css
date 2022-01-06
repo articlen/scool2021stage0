@@ -1,13 +1,38 @@
+
 /* учитывает все свойства связанных блоков */
 * {
     box-sizing: border-box; 
   }
 /* экран body масштабируется по центру */
 .body {
-    position:relative;
-    max-width:1680px;
-    margin: 0 auto;
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 1440px;
+  min-height: 100vh;
+  margin: 0 auto;
+    
       } 
+
+.header {
+  border: 1px solid rgb(221, 218, 14);
+}      
+
+.main {
+  border: 1px solid rgb(9, 156, 21);
+}
+
+.footer {
+  border: 1px solid rgb(52, 41, 192);
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 /* настрока шрифтов */
 .merriweather-bold {
     font-family: 'Merriweather', serif;
@@ -24,4 +49,23 @@
     font-weight: 700;
       }            
       
+.section-title {
+
+}
+
+.nav {
+
+}
+
+.nav-list {
+
+}
+
+.nav-item {
+
+}
+
+.nav-link {
+
+}
       
