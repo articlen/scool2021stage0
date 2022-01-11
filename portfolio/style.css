@@ -35,11 +35,11 @@ html {
   justify-content: space-between;
   flex-direction: column;
   width: 1440px;
-  min-height: 100vh;
+  /* min-height: 100vh; */
   margin: 0 auto;
   padding: 0;   
   
-  height: 5532px;
+  height: 5472px;
 background-color: black;
 
       } 
@@ -213,7 +213,7 @@ text-align: center;
 .skills-container {
   /* padding: 0 1.38vw ; */
 display: flex;
-  justify-content: space-around;
+  justify-content: space-around;  
   /* position: absolute; */
   width: 1440px;
   height: 120px;
@@ -310,7 +310,8 @@ text-align: center;
     margin: 5px;
     width: 220px;
     height: 55px;
- 
+/* Прозрачный фон */
+    background-color: transparent;
     color: #BDAE82;
     border: 2px solid #BDAE82;
     box-sizing: border-box;
@@ -363,9 +364,14 @@ line-height: 80px;
 letter-spacing: 0em;
 text-align: center;
 }
-.video {
+.video-player {
+  position: relative;
   display: flex;  
   justify-content: center; 
+  align-items: center;
+}
+.play-hover {
+  position: absolute;  
 }
 /* Price */
 /* Рисовать линии вокруг названия Price */
@@ -455,10 +461,75 @@ width: 220px;
 height: 55px;
 background-color: #BDAE82
 }
+/* Contacts */
+.fon-contacts {
+  margin: 50px auto;
+  position: absolute; 
+  background: url('./assets/img/contacts.jpg');
+  background-size: auto 700px;
+  background-position: center center; 
+  Width: 1440px;
+  Height: 700px;
+  padding-top: 20px;
+}
+.fl {
+  display: flex;
+  justify-content: end;
+}
 
+.flex-contacts { 
+  position: absolute;
+  display: flex;
+flex-direction: column;
+width: 450px;
+height: 445px;
+/* justify-content: space-between; */
+gap: 20px;
+}
+.placeholder {
+  font-family: inherit;
+  color: #BDAE82;
+  font-size: 20px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+/* Прозрачный фон */
+  background-color: transparent;
+}
+.h2-contacts {
+color: #BDAE82;
+  font-family: Merriweather;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+/* text-align: center; */
+}
+/* footer */
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
 
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+}
+/* gap- зазор между flex-element */
+.img-gap {
+  display: flex;
+  gap: 20px;
+  height: 27px;
+} 
+  
 .footer {
-  border: 1px solid rgb(52, 41, 192);
+  /* border: 1px solid rgb(52, 41, 192); */
+  color: white;
 }
 
 
