@@ -234,6 +234,7 @@ display: flex;
   .color-logo {
     margin: 0 auto 50px;
     transition: 0.3s;  
+    color: white;
   }
 .color-logo:hover{
    filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
@@ -290,6 +291,7 @@ text-align: center;
 }
 .button-container {
   /* padding: 0 1.38vw ; */
+  
   display: flex;
   justify-content: center;  
   width: 1440px;
@@ -463,14 +465,14 @@ background-color: #BDAE82
 }
 /* Contacts */
 .fon-contacts {
-  margin: 50px auto;
+  margin: 100px auto;
   position: absolute; 
   background: url('./assets/img/contacts.jpg');
   background-size: auto 700px;
   background-position: center center; 
   Width: 1440px;
   Height: 700px;
-  padding-top: 20px;
+  padding-top: 60px;
 }
 .fl {
   display: flex;
@@ -493,27 +495,51 @@ gap: 20px;
   border: 2px solid #BDAE82;
   box-sizing: border-box;
   border-radius: 0px;
+  height: 50px; 
+  padding-left: 20px;
 /* Прозрачный фон */
   background-color: transparent;
 }
 .h2-contacts {
 color: #BDAE82;
+width: 450px;
+height: 100px;
   font-family: Merriweather;
-font-size: 24px;
+font-size: 40px;
 font-style: normal;
 font-weight: 700;
-line-height: 48px;
+line-height: 80px;
 letter-spacing: 0em;
-/* text-align: center; */
+
 }
+.textarea {
+  font-family: inherit;
+  color: #BDAE82;
+  font-size: 20px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 100px;
+  padding-left: 20px;
+  padding-top: 10px;
+  /* Прозрачный фон */
+  background-color: transparent;
+  /* пользователь не меняет размер элемента */
+  resize: none;
+}
+
 /* footer */
+.footer {
+  /* border: 1px solid rgb(52, 41, 192); */
+  color: white; 
+}
 .flex-footer {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 90px;
 
   font-family: Inter;
-font-size: 20px;
+font-size: 23px;
 font-style: normal;
 font-weight: 400;
 line-height: 50px;
@@ -524,15 +550,8 @@ text-align: left;
 .img-gap {
   display: flex;
   gap: 20px;
-  height: 27px;
-} 
-  
-.footer {
-  /* border: 1px solid rgb(52, 41, 192); */
-  color: white;
+  height: 30px;
 }
-
-
      
 
 
