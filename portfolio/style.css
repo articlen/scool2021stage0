@@ -1,0 +1,560 @@
+/* настрока шрифтов */
+.merriweather-bold {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+      }
+
+.inter-regular {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+      }      
+
+.inter-regular-bold {
+  color: white;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+      }            
+/* учитывает все свойства связанных блоков */
+* {
+    box-sizing: border-box; 
+  }
+  
+* {
+  margin: 0;
+  padding: 0;
+}  
+/* Плавная прокрутка страницы*/
+html {
+  scroll-behavior: smooth;
+}
+
+/* экран body масштабируется по центру */
+.body {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 1440px;
+  /* min-height: 100vh; */
+  margin: 0 auto;
+  padding: 0;   
+  
+  height: 5472px;
+background-color: black;
+
+      } 
+
+.header-container {
+/* border: 1px solid rgb(221, 218, 14); */
+background: url(./assets/img/bg.jpg);
+background-repeat: no-repeat;
+background-position-x: center 0;
+padding: 0 1.38vw ;
+display: flex;
+  justify-content: space-between;
+  position: absolute;
+  width: 1440px;
+  height: 90px;
+} 
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  width: 50px;
+  height: 90px;
+}
+/* Изменение цвета при наведении */
+.logo{
+  height: 40px;
+  width: 50px;
+background-image: url('./assets/svg/Vector.svg') center;
+background-size: contain;
+background-repeat: no-repeat;
+transition: 0.3s;  
+}
+.logo:hover{
+ filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+}      
+
+.nav {
+display: flex;
+color: white;
+align-items: center;
+}
+
+.nav-list {
+list-style: none;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+/* margin-left: 0 auto; */
+margin: 0 auto; 
+}
+
+.nav-link {
+  padding: 0 30px;
+  line-height: 50px;
+  transition: .5s;
+  color: white;
+  text-decoration: none;
+
+}
+.nav-link:hover{
+  color: #21a09a;
+}     
+
+.eng {
+  cursor: pointer;
+  color: gold;
+}
+
+main {
+  /* border: 1px solid rgb(9, 156, 21); */
+  width: 1440px;
+    min-height: 100vh;
+}
+
+.hero {
+  background-image: url(./assets/img/bg.jpg);
+  background-position: center 0px;
+  background-repeat: no-repeat;
+  padding: 0 0 0 80px;
+ 
+  /* line-height: 50px; */
+  color: white;  
+  padding-top: 200px;
+  overflow: hidden;
+  min-height: 910px;
+}
+
+.h1-container {
+  /* margin: 0 auto; */
+  
+  height: 200px;  
+    border-radius: nullpx;
+  font-family: Merriweather;
+font-size: 60px;
+font-style: normal;
+font-weight: 700;
+line-height: 170px;
+letter-spacing: 0em;
+/* text-align: left; */
+}
+
+.hero-container {
+  height: 120px;
+width: 470px;
+left: 0px;
+top: 130px;
+border-radius: nullpx;
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: left;
+}
+
+.button {
+  cursor: pointer;
+  
+    font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+text-decoration: none;
+display: block;
+margin: 25px;
+width: 220px;
+height: 55px;
+  background-color: #BDAE82
+  }
+.button-transparent {
+  cursor: pointer;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0em;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 25px;
+  width: 220px;
+  height: 55px;
+  background-color: transparent;
+}
+/* Рисовать линии вокруг названия skills */
+.line-text {  
+  margin: 100px auto 60px;
+  width: 50%;
+  overflow-x: hidden;  
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+.h2 { 
+  color: #BDAE82;
+    background: black; 
+    margin: 0 auto;
+  width: 140px;
+  font-family: Merriweather;
+font-size: 40px;
+font-style: normal;
+font-weight: 700px;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+}
+
+.skills-container {
+  /* padding: 0 1.38vw ; */
+display: flex;
+  justify-content: space-around;  
+  /* position: absolute; */
+  width: 1440px;
+  height: 120px;
+}
+.skills-object {
+  width: 320px;
+  height: 240px;  
+}
+.skills-flex {
+  display: flex;
+  flex-direction: column;  
+   /* width: 62px;  */
+  /* height: 50px; */
+  /* margin: 0 auto;  */
+  align-items: flex-start;
+}
+  /* Изменение цвета при наведении */
+  .color-logo {
+    margin: 0 auto 50px;
+    transition: 0.3s;  
+    color: white;
+  }
+.color-logo:hover{
+   filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+}
+.h2-logo {
+  margin: 0 auto 20px;
+  color: white;
+  height: 40px;
+  width: 280px;  
+
+border-radius: nullpx;
+font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 40px;
+letter-spacing: 0em;
+text-align: center;
+}
+.text-logo {
+  margin: 0 auto;
+  color: white;
+  width: 285px;
+  height: 72px;
+ 
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+/* Portfolio */
+/* Рисовать линии вокруг названия Portfolio */
+.line-text-Portfolio {  
+  margin: 210px auto 60px;
+  width: 50%;
+  overflow-x: hidden;  
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+.h2-portfolio { 
+  color: #BDAE82;
+  background: black; 
+  margin: 0 auto;
+  width: 215px;
+  font-family: Merriweather;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700px;
+  line-height: 80px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.button-container {
+  /* padding: 0 1.38vw ; */
+  
+  display: flex;
+  justify-content: center;  
+  width: 1440px;
+  height: 120px;
+}  
+.button-portfolio {
+  cursor: pointer;
+  
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    margin: 5px;
+    width: 220px;
+    height: 55px;
+/* Прозрачный фон */
+    background-color: transparent;
+    color: #BDAE82;
+    border: 2px solid #BDAE82;
+    box-sizing: border-box;
+    border-radius: 0px;
+  }
+.button-autumn {
+  cursor: pointer;
+  
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+text-decoration: none;
+display: block;
+margin: 5px;
+width: 220px;
+height: 55px;
+background-color: #BDAE82
+}
+.foto{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.foto-setings {
+  margin: 0 25px 25px 0;
+}
+ /* Video */
+/* Рисовать линии вокруг названия Video */
+.line-text-video {  
+  margin: 70px auto 60px;
+  width: 50%;
+  overflow-x: hidden;  
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+.h2-video { 
+  color: #BDAE82;
+    background: black; 
+    margin: 0 auto;
+  width: 155px;
+  font-family: Merriweather;
+font-size: 40px;
+font-style: normal;
+font-weight: 700px;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+}
+.video-player {
+  position: relative;
+  display: flex;  
+  justify-content: center; 
+  align-items: center;
+}
+.play-hover {
+  position: absolute;  
+}
+/* Price */
+/* Рисовать линии вокруг названия Price */
+.line-text-price{
+  margin: 70px auto 60px;
+  width: 50%;
+  overflow-x: hidden;  
+  background-image: linear-gradient(to top, #000 39px, #bdae82 39px, #bdae82 41px, #000 41px);
+}
+
+.h2-price { 
+  color: #BDAE82;
+    background: black; 
+    margin: 0 auto;
+  width: 140px;
+  font-family: Merriweather;
+font-size: 40px;
+font-style: normal;
+font-weight: 700px;
+line-height: 80px;
+letter-spacing: 0em;
+text-align: center;
+}
+.price-flex {
+  display: flex;
+  justify-content: space-around;    
+}
+.size-price {
+  display: flex;
+  flex-direction: column;
+  /* padding: 100px auto; */
+  width: 450px;
+  height: 505px;
+  border: 3px solid #BDAE82;
+box-sizing: border-box;
+border-radius: 0px;
+}
+.h2-price-bold {
+  color: white;
+  font-family: Merriweather;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 40px auto 20px;
+}
+.h2-price-norm {
+  color: #BDAE82;
+  font-family: Merriweather;
+font-size: 24px;
+font-style: normal;
+font-weight: 700;
+line-height: 48px;
+letter-spacing: 0em;
+text-align: center;
+
+
+}
+.p {
+  margin: 0 auto;
+  color: white;
+  width: 183px;
+  height: 180px; 
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.button-autumn-price {
+  cursor: pointer;  
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+text-decoration: none;
+display: block;
+margin: auto;
+width: 220px;
+height: 55px;
+background-color: #BDAE82
+}
+/* Contacts */
+.fon-contacts {
+  margin: 100px auto;
+  position: absolute; 
+  background: url('./assets/img/contacts.jpg');
+  background-size: auto 700px;
+  background-position: center center; 
+  Width: 1440px;
+  Height: 700px;
+  padding-top: 60px;
+}
+.fl {
+  display: flex;
+  justify-content: end;
+}
+
+.flex-contacts { 
+  position: absolute;
+  display: flex;
+flex-direction: column;
+width: 450px;
+height: 445px;
+/* justify-content: space-between; */
+gap: 20px;
+}
+.placeholder {
+  font-family: inherit;
+  color: #BDAE82;
+  font-size: 20px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 50px; 
+  padding-left: 20px;
+/* Прозрачный фон */
+  background-color: transparent;
+}
+.h2-contacts {
+color: #BDAE82;
+width: 450px;
+height: 100px;
+  font-family: Merriweather;
+font-size: 40px;
+font-style: normal;
+font-weight: 700;
+line-height: 80px;
+letter-spacing: 0em;
+
+}
+.textarea {
+  font-family: inherit;
+  color: #BDAE82;
+  font-size: 20px;
+  border: 2px solid #BDAE82;
+  box-sizing: border-box;
+  border-radius: 0px;
+  height: 100px;
+  padding-left: 20px;
+  padding-top: 10px;
+  /* Прозрачный фон */
+  background-color: transparent;
+  /* пользователь не меняет размер элемента */
+  resize: none;
+}
+
+/* footer */
+.footer {
+  /* border: 1px solid rgb(52, 41, 192); */
+  color: white; 
+}
+.flex-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 90px;
+
+  font-family: Inter;
+font-size: 23px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+}
+/* gap- зазор между flex-element */
+.img-gap {
+  display: flex;
+  gap: 20px;
+  height: 30px;
+}
+     
+
+
+
+
+
