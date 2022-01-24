@@ -34,7 +34,7 @@ html {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  width: 1440px;
+  max-width: 1440px;
   /* min-height: 100vh; */
   margin: 0 auto;
   padding: 0;   
@@ -92,11 +92,20 @@ margin: 0 auto;
 }
 
 .nav-link {
-  padding: 0 30px;
+  padding: 0 15px;
   line-height: 50px;
   transition: .5s;
   color: white;
   text-decoration: none;
+
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+
 
 }
 .nav-link:hover{
@@ -106,6 +115,25 @@ margin: 0 auto;
 .eng {
   cursor: pointer;
   color: gold;
+
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 700;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: center;
+
+}
+.ru {
+  font-family: Inter;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 
 main {
@@ -156,6 +184,7 @@ letter-spacing: 0em;
 text-align: left;
 }
 
+
 .button {
   cursor: pointer;
   
@@ -168,10 +197,11 @@ letter-spacing: 0em;
 text-align: center;
 text-decoration: none;
 display: block;
-margin: 25px;
+margin: 25px 0px;
 width: 220px;
 height: 55px;
   background-color: #BDAE82
+  
   }
 .button-transparent {
   cursor: pointer;
@@ -563,6 +593,30 @@ text-align: left;
   transition: 0.3s;
 }     
 
+ /* head {
+    
+  }
+/* Новое масштабирование 768*/
+@media screen and (max-width: 1280px) {
+   .body {
+    /* border: 1px solid red; */
+    width: 768px;
+    justify-content: space-around;    
+  } 
+    
+  
+  
+}
 
 
+/* Новое масштабирование 480*/
+@media screen and (max-width: 480px) {
+  .body {
+    /* border: 1px solid red; */
+    width: 320px;
+    justify-content: space-around; 
+        } 
+       
+        
 
+}
