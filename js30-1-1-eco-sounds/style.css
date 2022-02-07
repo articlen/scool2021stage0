@@ -1,1 +1,127 @@
-/* df */
+/* учитывает все свойства связанных блоков */
+* {
+    box-sizing: border-box; 
+  }
+/* обнуляет отступы   */
+* {
+  margin: 0;
+  padding: 0;
+}  
+
+.body {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 1920px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    padding: 0;   
+    
+    /* height: 5472px; */
+  /* background-color: black; */  
+        } 
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: black;
+        }
+        /* Изменение цвета при наведении */
+.logo{
+    height: 100%;
+    margin: 0 40%;
+    /* width: 50px; */
+  background-image: url('./assets/svg/Vector.svg') center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;  
+  }
+  .logo:hover{
+   filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+  }      
+        .nav {
+            display: flex;
+            color: white;
+            align-items: center;
+            }
+            
+            .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* margin-left: 0 auto; */
+            margin: 0 -20%; 
+            font-family: "Mukta", serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+            }
+            
+            .nav-link {
+              padding: 0 30px;
+              line-height: 50px;
+              transition: .5s;
+              color: white;
+              text-decoration: none;
+            
+            }
+            .nav-link:hover{
+              color: #21a09a;
+            }     
+
+
+.main {
+    background-image: url("./assets/img/forest.jpg");
+    padding-top: 200px;
+  overflow: hidden;
+  min-height: 710px;
+}
+/* footer */
+.footer {
+    /* border: 1px solid rgb(52, 41, 192); */
+    color: white; 
+    background-color: black;
+  }
+  .flex-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 90px;  
+    
+    font-family: "Mukta", serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  
+  .poz-footer{
+    margin: 30px;
+  }
+  .link-footer {
+      margin: 0px 30px;
+    color: white;
+    list-style: none;
+  /* убирает подчеркивание ссылки */
+    text-decoration: none;
+  }     
+  .link-footer:hover{
+    color: #67e747;
+    transition: 0.3s;
+  }         
+.data {
+    margin: -20px auto 0px;
+    height: 50px;
+    transition: 0.3s;
+}
+.data:hover{
+    color: #67e747;
+    filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+}    
+  
