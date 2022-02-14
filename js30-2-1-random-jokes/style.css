@@ -17,9 +17,11 @@
     background: aquamarine;
 }
 .block {
-    width: 100px;
+    width: 50%;
     height: 120px;
-    background: blueviolet;
+    background: darkblue;
     position:  absolute;
     left: 20% ;
+    color: deeppink;
+    
 }
