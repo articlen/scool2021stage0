@@ -24,10 +24,17 @@ async function getData() {
     const res = await fetch(url);
     const data = await res.json();
     console.log(data);
-
-    block.innerHTML += data[0].text.textContent + "<br>";
+   
   }
   getData();
+
+  const spanblock = document.querySelector(".spanblock")
+  spanblock.classList.add("span");
+const read = document.createElement("p");
+read.textContent = 'fghjjhhgyyhh5667';
+read.classList.add("p");
+document.body.append(p);
+ 
 // const keys = Object.keys(data)
 //   data[0].text;
  

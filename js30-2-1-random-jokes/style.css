@@ -25,3 +25,16 @@
     color: deeppink;
     
 }
+.spanblock {
+    width: 100%;
+    height: 150px;
+    border: 3px solid red;
+    
+}
+.span {
+    margin: 0 auto;
+    width: 80%;
+    height: 40px;
+   text-align: center;
+
+}
