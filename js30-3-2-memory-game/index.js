@@ -141,8 +141,8 @@ function newGame() {
     firstImg.setAttribute("src", `${mas[randomImg]}`);
     secondImg.setAttribute("src", `${mas[randomImg]}`);
 
-    firstBackImg.setAttribute("src", `${backImg} `);
-    secondBackImg.setAttribute("src", `${backImg}  `);
+    firstBackImg.setAttribute("src", `${backImg}`);
+    secondBackImg.setAttribute("src", `${backImg}`);
     firstImg.classList.add("front-face");
     firstBackImg.classList.add("back-face");
     secondImg.classList.add("front-face");
