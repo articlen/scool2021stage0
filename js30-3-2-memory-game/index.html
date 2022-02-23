@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>memory-game</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
+  </head>
+
+<body>
+  <div class="inner">
+    <h1>Memory Game</h1>
+    <p>Зарегестрируйтесь для начала игры</p>
+    <div class="login">
+
+      <input type="text" placeholder="Введите имя">
+      <input type="text" placeholder="Введите фамилию">
+      <input type="text" placeholder="Введите email">
+      <button>ok</button>
+    </div>
+
+  </div>
+  <div class="setting">
+    <h2>Правила игры</h2>
+    <p>Lay them in rows, face down. <br>
+      Turn over any two cards.<br>
+      If the two cards match, keep them.<br>
+      If they don't match, turn them back over.<br>
+      Remember what was on each card and where it was.<br>
+      Watch and remember during the other player's turn.<br>
+      The game is over when all the cards have been matched.</p>
+    <h2>Выберите сложность</h2>
+    <div class="difficult">
+      <button class="small">small</button>
+      <button class="medium">medium</buttonclass="small">
+        <button class="large">large</button>
+    </div>
+  </div>
+  <div class="typeCard">
+    <h2>Выберите рубашку карт</h2>
+    <div class="cardImg">
+      <img src="img/imgback/backimg1.png" alt="">
+      <img src="img/imgback/backimg2.png" alt="">
+      <img src="img/imgback/backimg3.png" alt="">
+      <img src="img/imgback/backimg4.png" alt="">
+    </div>
+  </div>
+  <div class="start">
+    <button>start</button>
+  </div>
+  <div class="game">
+    <div class="name"></div>
+    <form name=Time class="time">
+      <p>Времени прошло</p>
+      <input name=stopwatch size=10 value="00:00:00.00">
+
+
+    </form>
+
+    <section class="memory-game">
+
+    </section>
+   
+  </div>
+  <div class="records">
+    <h2>Congratulations!</h2>
+    <table border="1">
+      <caption>Таблица рекордов</caption>
+      <tr>
+       <th>№</th>
+       <th>Player</th>
+       <th>Ramaining time</th>       
+      </tr> 
+     </table>
+  </div>
+
+  <footer class="footer">
+    <div class="flex-footer">
+        <pre class="poz-footer">&COPY;  2022  <a href="https://github.com/articlen" class="link-footer">github</a></pre>
+        <pre ><a href="https://rs.school/js-stage0" class="link-footer">
+            <img  class="data" src="./assets/svg/rss.svg" alt="rss"></a></pre>
+       
+    </div>
+
+</footer>
+  <script src="index.js"></script>
+</body>
+
+</html>
