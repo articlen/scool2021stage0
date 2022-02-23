@@ -1,0 +1,204 @@
+/* учитывает все свойства связанных блоков */
+* {
+    box-sizing: border-box; 
+  }
+/* обнуляет отступы   */
+* {
+  margin: 0;
+  padding: 0;
+}  
+
+.body {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    width: 1920px;
+    /* min-height: 100vh; */
+    margin: 0 auto;
+    padding: 0;   
+    
+    /* height: 5472px; */
+  /* background-color: black; */  
+        } 
+.header {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    background-color: black;
+        }
+        /* Изменение цвета при наведении */
+.logo{
+    height: 100%;
+    margin: 0 40%;
+    /* width: 50px; */
+  background-image: url('./assets/svg/Vector.svg') center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: 0.3s;  
+  }
+  .logo:hover{
+   filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+  }      
+        .nav {
+            display: flex;
+            color: white;
+            align-items: center;
+            }
+            
+            .nav-list {
+            list-style: none;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            /* margin-left: 0 auto; */
+            margin: 0 -20%; 
+            font-family: "Mukta", serif;
+  font-size: 27px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+            }
+            
+            .nav-link {
+              padding: 0 30px;
+              line-height: 50px;
+              transition: .5s;
+              color: white;
+              text-decoration: none;
+            
+            }
+            .nav-link:hover{
+              color: #21a09a;
+            }     
+
+
+.main {
+    background-image: url("./assets/img/forest.jpg");
+    padding-top: 200px;
+  overflow: hidden;
+  min-height: 1080px;
+}
+/* footer */
+.footer {
+    /* border: 1px solid rgb(52, 41, 192); */
+    color: white; 
+    background-color: black;
+  }
+  .flex-footer {
+    display: flex;
+    justify-content: space-around;
+    height: 90px;  
+    
+    font-family: "Mukta", serif;
+  font-size: 33px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  
+  .poz-footer{
+    margin: 30px;
+  }
+  .link-footer {
+      margin: 0px 30px;
+    color: white;
+    list-style: none;
+  /* убирает подчеркивание ссылки */
+    text-decoration: none;
+  }     
+  .link-footer:hover{
+    color: #67e747;
+    transition: 0.3s;
+  }         
+.data {
+    margin: -20px auto 0px;
+    height: 50px;
+    transition: 0.3s;
+}
+.data:hover{
+    color: #67e747;
+    filter: invert(36%) sepia(15%) saturate(638%) hue-rotate(7deg) brightness(92%) contrast(87);
+}    
+  
+@media(max-width: 1440px) {
+    .body {            
+        justify-content: space-around;
+        width: 1440px;
+        /* min-height: 100vh; */        
+        }
+}
+@media(max-width: 768px) {
+    .body {       
+        justify-content: space-around;
+        width: 768px;
+        /* min-height: 100vh; */        
+        }
+        .nav-list {
+            display: none;    
+        }
+                
+        /* ALL */
+
+.row .three{
+    padding: 80px 30px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /* background-color: #2c3e50; */
+    color: #ecf0f1;
+    text-align: center;
+  }
+  
+  .hamburger .line{
+    width: 50px;
+    height: 5px;
+    background-color: #ecf0f1;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hamburger:hover{
+    cursor: pointer;
+  }
+  
+  /* ONE */
+  
+  #hamburger-1.is-active .line:nth-child(2){
+    opacity: 0;
+  }
+  
+  #hamburger-1.is-active .line:nth-child(1){
+    -webkit-transform: translateY(13px) rotate(45deg);
+    -ms-transform: translateY(13px) rotate(45deg);
+    -o-transform: translateY(13px) rotate(45deg);
+    transform: translateY(13px) rotate(45deg);
+  }
+  
+  #hamburger-1.is-active .line:nth-child(3){
+    -webkit-transform: translateY(-13px) rotate(-45deg);
+    -ms-transform: translateY(-13px) rotate(-45deg);
+    -o-transform: translateY(-13px) rotate(-45deg);
+    transform: translateY(-13px) rotate(-45deg);
+  }
+  .flex-footer {   
+  font-size: 23px; 
+  }  
+  .poz-footer{
+    margin: 30px;
+  }
+ .data {   
+    height: 30px;   
+}
+  
+  }         
+
+
+
